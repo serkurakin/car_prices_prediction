@@ -15,10 +15,10 @@
 
 # Скриншоты веб-приложения
 
-![Streamlit Interface](./images/screenshot_1.png)
-![Streamlit Interface](./images/screenshot_2.png)
-![Streamlit Interface](./images/screenshot_3.png)
-![Streamlit Interface](./images/screenshot_4.png)
+![Streamlit Interface](https://github.com/serkurakin/car_prices_prediction/blob/main/images/screenshot_1.PNG?raw=true) 
+![Streamlit Interface](https://github.com/serkurakin/car_prices_prediction/blob/main/images/screenshot_2.PNG?raw=true)
+![Streamlit Interface](https://github.com/serkurakin/car_prices_prediction/blob/main/images/screenshot_3.PNG?raw=true)
+![Streamlit Interface](https://github.com/serkurakin/car_prices_prediction/blob/main/images/screenshot_4.PNG?raw=true)
 
 # Запуск сервиса
 
@@ -26,11 +26,11 @@
 
 2. Клонировать репозиторий
 
-git clone https://github.com/serkurakin/car_prices_prediction.git
-cd car_prices_prediction
+* git clone https://github.com/serkurakin/car_prices_prediction.git  
+* cd car_prices_prediction
 
 3. Запустить сервис. Для этого необходимо использовать команду:
 
-docker-compose up --build
+* docker-compose up --build
 
 4. Открыть Streamlit-приложение в браузере по адресу http://localhost:8501. Этот порт используется для frontend интерфейса. Получить доступ к FastAPI по адресу http://localhost:8001. Этот порт используется для backend-API.
