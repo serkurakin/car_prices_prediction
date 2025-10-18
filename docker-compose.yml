@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "${BACKEND_PORT}:8000"
+    container_name: "${COMPOSE_PROJECT_NAME}_backend"
+    environment:
+      - MODEL_PATH=${MODEL_PATH}
+      - ENVIRONMENT=${ENVIRONMENT}
+      - HOST=${BACKEND_HOST}
+    volumes:
+      - ./backend:/app
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "${FRONTEND_PORT}:8501" 
+    container_name: "${COMPOSE_PROJECT_NAME}_frontend"
+    environment:
+      - BACKEND_URL=${BACKEND_URL}
+      - APP_NAME=${APP_NAME}
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/app
