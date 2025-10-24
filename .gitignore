@@ -1,1 +1,4 @@
 *.csv
+.env
+catboost/
+__pycache__/
